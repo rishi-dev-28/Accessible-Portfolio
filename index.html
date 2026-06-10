@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Rishi Raj Tiwari | Full Stack Developer Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="description"
         content="Official portfolio of Rishi Raj Tiwari - Full Stack Developer, Web Designer, and AI enthusiast. Explore projects, skills, and contact information.">
 
@@ -35,8 +35,12 @@
     <!-- HEADER -->
     <header role="banner">
         <div class="container">
+            <div class="header-wrapper">
+            </div>
             <h1>Rishi Raj Tiwari</h1>
-
+            <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">
+                Toggle Theme
+            </button>
             <!-- NAVIGATION -->
             <nav aria-label="Main Navigation">
                 <ul class="nav-list">
@@ -67,22 +71,22 @@
         </section>
 
         <!-- FEATURES -->
-        <section aria-labelledby="skills-heading">
+        <section class="hero" aria-labelledby="hero-heading">
             <div class="container">
 
                 <h2 id="skills-heading">Skills</h2>
-
-                <article>
+                <div class="grid-layout"></div>
+                <article class="card">
                     <h3>Frontend Development</h3>
                     <p>HTML5, CSS3, JavaScript, Responsive Design, Accessibility</p>
                 </article>
 
-                <article>
+                <article class="card">
                     <h3>Backend Development</h3>
                     <p>Node.js, Express.js, Database Integration</p>
                 </article>
 
-                <article>
+                <article class="card">
                     <h3>Tools & Technologies</h3>
                     <p>Git, GitHub, VS Code, SEO Optimization</p>
                 </article>
@@ -95,6 +99,8 @@
     <!-- FOOTER -->
     <footer role="contentinfo">
         <div class="container">
+            <div class="hero-content">
+            </div>
             <p>&copy; 2026 Rishi Raj Tiwari. All rights reserved.</p>
         </div>
     </footer>
